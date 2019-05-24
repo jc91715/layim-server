@@ -1,0 +1,378 @@
+2019-05-21 07:11:08 pid:32704 Workerman[start.php] start in DEBUG mode
+2019-05-21 07:11:35 pid:32704 Workerman[start.php] stopping ...
+2019-05-21 07:11:35 pid:32704 Workerman[start.php] has been stopped
+2019-05-21 07:13:00 pid:32718 Workerman[start.php] start in DEBUG mode
+2019-05-21 07:36:05 pid:32718 Workerman[start.php] stopping ...
+2019-05-21 07:36:05 pid:32718 Workerman[start.php] has been stopped
+2019-05-21 07:36:07 pid:787 Workerman[start.php] start in DEBUG mode
+2019-05-21 08:22:45 pid:787 Workerman[start.php] stopping ...
+2019-05-21 08:22:45 pid:787 Workerman[start.php] has been stopped
+2019-05-21 08:22:46 pid:1661 Workerman[start.php] start in DEBUG mode
+2019-05-21 08:25:49 pid:1661 Workerman[start.php] stopping ...
+2019-05-21 08:25:49 pid:1661 Workerman[start.php] has been stopped
+2019-05-21 08:25:50 pid:1690 Workerman[start.php] start in DEBUG mode
+2019-05-21 08:53:53 pid:1690 Workerman[start.php] stopping ...
+2019-05-21 08:53:54 pid:1690 Workerman[start.php] has been stopped
+2019-05-21 08:53:54 pid:2298 Workerman[start.php] start in DEBUG mode
+2019-05-21 08:54:26 pid:2298 Workerman[start.php] stopping ...
+2019-05-21 08:54:26 pid:2298 Workerman[start.php] has been stopped
+2019-05-21 08:54:27 pid:2311 Workerman[start.php] start in DEBUG mode
+2019-05-21 09:34:53 pid:2311 Workerman[start.php] stopping ...
+2019-05-21 09:34:53 pid:2311 Workerman[start.php] has been stopped
+2019-05-21 09:34:54 pid:2934 Workerman[start.php] start in DEBUG mode
+2019-05-21 09:37:17 pid:2934 Workerman[start.php] stopping ...
+2019-05-21 09:37:18 pid:2934 Workerman[start.php] has been stopped
+2019-05-21 09:37:19 pid:2956 Workerman[start.php] start in DEBUG mode
+2019-05-21 09:37:35 pid:2956 Workerman[start.php] stopping ...
+2019-05-21 09:37:35 pid:2956 Workerman[start.php] has been stopped
+2019-05-21 09:37:36 pid:2966 Workerman[start.php] start in DEBUG mode
+2019-05-21 09:38:09 pid:2966 Workerman[start.php] stopping ...
+2019-05-21 09:38:09 pid:2966 Workerman[start.php] has been stopped
+2019-05-21 09:38:10 pid:2979 Workerman[start.php] start in DEBUG mode
+2019-05-21 09:40:43 pid:2979 Workerman[start.php] stopping ...
+2019-05-21 09:40:43 pid:2979 Workerman[start.php] has been stopped
+2019-05-21 09:40:44 pid:3109 Workerman[start.php] start in DEBUG mode
+2019-05-21 09:48:03 pid:3109 Workerman[start.php] stopping ...
+2019-05-21 09:48:03 pid:3109 Workerman[start.php] has been stopped
+2019-05-21 09:48:07 pid:3457 Workerman[start.php] start in DAEMON mode
+2019-05-22 03:46:27 pid:12065 Workerman[start.php] status 
+2019-05-22 03:47:02 pid:12070 Workerman[start.php] status 
+2019-05-22 03:47:36 pid:12072 Workerman[start.php] connections 
+2019-05-22 03:58:14 pid:3465 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(569): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #60)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-05-22 03:58:14 pid:3465 Worker[3465] process terminated
+2019-05-22 03:58:14 pid:3459 worker[YourAppGateway:3465] exit with status 64000
+2019-05-22 03:59:04 pid:3464 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(569): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #60)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-05-22 03:59:04 pid:3464 Worker[3464] process terminated
+2019-05-22 03:59:04 pid:3459 worker[YourAppGateway:3464] exit with status 64000
+2019-05-22 04:06:52 pid:12508 Workerman[start.php] reload 
+2019-05-22 04:06:52 pid:3459 Workerman[start.php] reloading
+2019-05-22 04:30:52 pid:3466 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #72)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-05-22 04:30:52 pid:3466 Worker[3466] process terminated
+2019-05-22 04:30:52 pid:3459 worker[YourAppGateway:3466] exit with status 64000
+2019-05-22 04:33:08 pid:12451 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #90)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 04:33:08 pid:3467 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #69)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-05-22 04:33:08 pid:12451 Worker[12451] process terminated
+2019-05-22 04:33:08 pid:3467 Worker[3467] process terminated
+2019-05-22 04:33:08 pid:3459 worker[YourAppGateway:12451] exit with status 64000
+2019-05-22 04:33:08 pid:3459 worker[YourAppGateway:3467] exit with status 64000
+2019-05-22 04:35:24 pid:12884 Workerman[start.php] reload 
+2019-05-22 04:35:24 pid:3459 Workerman[start.php] reloading
+2019-05-22 04:38:10 pid:12849 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #95)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 04:38:10 pid:12863 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #92)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 04:38:10 pid:12849 Worker[12849] process terminated
+2019-05-22 04:38:10 pid:12863 Worker[12863] process terminated
+2019-05-22 04:38:10 pid:3459 worker[YourAppGateway:12849] exit with status 64000
+2019-05-22 04:38:10 pid:3459 worker[YourAppGateway:12863] exit with status 64000
+2019-05-22 04:38:45 pid:12864 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #100)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 04:38:45 pid:12864 Worker[12864] process terminated
+2019-05-22 04:38:45 pid:3459 worker[YourAppGateway:12864] exit with status 64000
+2019-05-22 04:39:22 pid:12905 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #90)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 04:39:22 pid:12905 Worker[12905] process terminated
+2019-05-22 04:39:22 pid:3459 worker[YourAppGateway:12905] exit with status 64000
+2019-05-22 04:44:17 pid:12904 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #93)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 04:44:17 pid:12904 Worker[12904] process terminated
+2019-05-22 04:44:17 pid:3459 worker[YourAppGateway:12904] exit with status 64000
+2019-05-22 04:44:44 pid:12462 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #107)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 04:44:44 pid:12462 Worker[12462] process terminated
+2019-05-22 04:44:44 pid:3459 worker[YourAppGateway:12462] exit with status 64000
+2019-05-22 04:45:18 pid:13079 Workerman[start.php] status 
+2019-05-22 04:46:18 pid:13063 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #93)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 04:46:18 pid:13063 Worker[13063] process terminated
+2019-05-22 04:46:18 pid:3459 worker[YourAppGateway:13063] exit with status 64000
+2019-05-22 04:50:51 pid:13071 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #102)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 04:50:51 pid:13071 Worker[13071] process terminated
+2019-05-22 04:50:51 pid:3459 worker[YourAppGateway:13071] exit with status 64000
+2019-05-22 05:36:51 pid:14141 Workerman[start.php] reload 
+2019-05-22 05:36:51 pid:3459 Workerman[start.php] reloading
+2019-05-22 05:37:18 pid:13028 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #112)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 05:37:18 pid:13028 Worker[13028] process terminated
+2019-05-22 05:37:18 pid:3459 worker[YourAppGateway:13028] exit with status 64000
+2019-05-22 05:39:16 pid:14277 Workerman[start.php] reload 
+2019-05-22 05:39:16 pid:3459 Workerman[start.php] reloading
+2019-05-22 05:40:09 pid:13110 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #123)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 05:40:09 pid:13110 Worker[13110] process terminated
+2019-05-22 05:40:09 pid:3459 worker[YourAppGateway:13110] exit with status 64000
+2019-05-22 05:44:09 pid:12908 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(765): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #119)
+#5 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/vagrant/Code/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#8 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\Gateway->run()
+#9 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#10 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/vagrant/Code/GatewayWorker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /home/vagrant/Code/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-05-22 05:44:09 pid:12908 Worker[12908] process terminated
+2019-05-22 05:44:09 pid:3459 worker[YourAppGateway:12908] exit with status 64000
+2019-05-22 05:51:56 pid:14407 Workerman[start.php] reload 
+2019-05-22 05:51:56 pid:3459 Workerman[start.php] reloading
+2019-05-22 06:16:36 pid:14946 Workerman[start.php] reload 
+2019-05-22 06:16:36 pid:3459 Workerman[start.php] reloading
+2019-05-22 06:43:33 pid:15692 Workerman[start.php] status 
+2019-05-22 06:55:06 pid:15773 Workerman[start.php] reload 
+2019-05-22 06:55:06 pid:3459 Workerman[start.php] reloading
+2019-05-22 07:40:22 pid:16966 Workerman[start.php] status 
+2019-05-22 12:53:15 pid:2537 Workerman[start.php] start in DEBUG mode
+2019-05-22 12:53:17 pid:2537 Workerman[start.php] stopping ...
+2019-05-22 12:53:17 pid:2537 Workerman[start.php] has been stopped
+2019-05-22 12:53:20 pid:2547 Workerman[start.php] start in DAEMON mode
+2019-05-24 03:49:32 pid:7292 Workerman[start.php] status 
+2019-05-24 03:49:37 pid:7293 Workerman[start.php] status 
+2019-05-24 08:18:16 pid:11844 Workerman[start.php] status 
+2019-05-24 08:50:05 pid:2549 Workerman[start.php] stopping ...
+2019-05-24 08:54:22 pid:2589 Workerman[start.php] start in DAEMON mode
